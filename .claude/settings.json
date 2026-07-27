@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show *)",
+      "Bash(pip install *)",
+      "Bash(python -c \"import tensorflow as tf; import keras; import serial; import numpy as np; print\\(f'TensorFlow={tf.__version__} Keras={keras.__version__} Serial={serial.VERSION} NumPy={np.__version__}'\\)\")",
+      "Bash(python augment_data.py --input training_data --output augmented_data --multiply 5)",
+      "Bash(python train_cnn.py --data augmented_data --epochs 30 --output fatigue_model.h5)",
+      "Bash(python export_model.py --model fatigue_model.h5 --output ../E18_usb_cdc_demo/code/cnn_weights.h)"
+    ]
+  }
+}

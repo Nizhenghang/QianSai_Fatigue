@@ -1,0 +1,7 @@
+com.qiansai.fatiguebluetooth.app-pngs-0 D:\Nizhenghang\QianSai\android\FatigueBluetoothApp\app\build\generated\res\pngs\debug
+com.qiansai.fatiguebluetooth.app-resValues-1 D:\Nizhenghang\QianSai\android\FatigueBluetoothApp\app\build\generated\res\resValues\debug
+com.qiansai.fatiguebluetooth.app-packageDebugResources-2 D:\Nizhenghang\QianSai\android\FatigueBluetoothApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.qiansai.fatiguebluetooth.app-packageDebugResources-3 D:\Nizhenghang\QianSai\android\FatigueBluetoothApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.qiansai.fatiguebluetooth.app-debug-4 D:\Nizhenghang\QianSai\android\FatigueBluetoothApp\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.qiansai.fatiguebluetooth.app-debug-5 D:\Nizhenghang\QianSai\android\FatigueBluetoothApp\app\src\debug\res
+com.qiansai.fatiguebluetooth.app-main-6 D:\Nizhenghang\QianSai\android\FatigueBluetoothApp\app\src\main\res

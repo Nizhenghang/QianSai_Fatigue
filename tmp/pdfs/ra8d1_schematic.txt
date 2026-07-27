@@ -1,0 +1,1236 @@
+                 1                    2                                          3                                                                    4
+
+
+    版本号 修订日期 修订记录
+    V1.0.0.0   2025-01-26   初始版本
+
+
+A   V1.0.1.0   2025-03-20   更改屏幕引脚
+                                                                                                                                                          A
+    V1.0.1.1   2025-04-11   更改麦克风电阻
+
+
+
+
+B                                                                                                                                                         B
+
+
+
+
+C                                                                                                                                                         C
+
+
+
+
+D                                                                                                                                                         D
+
+
+                                                               版权所有，保留一切权利。    Title: RA8D1_DevBoard                               Author: 猫肆管
+                                          本公司致力于产品的不断改善和功能升级，内容如有改动，恕不另行通知。
+                                                                               Subtitle: Revision                                  Revision: V1.0.1.1
+                                              在此文件中，仅以版本号前两位(发行版)，划分版本之间的区别。
+                                                                               Size: A4      Date: 2025/4/11   Time: 15:07:49   Sheet: 1      of: 5
+
+                 1                    2                                          3                                                                    4
+                    1                                               2                                        3                                                                   4
+
+
+
+
+     A                                 VBAT                                   VBAT                  ADC                                                                              A
+                        电源接口                                                           电压检测
+
+
+                                              VBAT                            可调                 PWM GTIOC
+                                                     舵机电源     SCT2450                  舵机接口
+
+
+                                              VBAT                                               PWM GTIOC
+                                                      5V电源    SCT2450                有刷电机信号接口
+
+
+                                                                                                     IO
+                                                                                        按键
+
+
+                                              5V                              3.3V                DVP CEU
+                                                     3.3V电源 TP5108E23E                摄像头接口
+                                                                                                     I2C
+     B                                                                                                                                                                               B
+                                              5V                              3.3V                GTIOC/IO
+                                                     3.3V电源 TP5108E23E                编码器接口
+
+
+                                                                              3.3V                   SPI
+                                                                                      姿态传感器
+                                                                                                                       RA8D1核心板
+                                                                              3.3V                   IO
+                                                                                        LED
+
+
+                                                                              3.3V                  ADC
+                                                                                      麦克风&放大
+
+                                                                              3.3V
+                                                                                                  DAC&IO
+                                                                                      功放&扬声器
+     C                                                                         5V                                                                                                    C
+                                                                               5V                  SPI/IO
+                                                                                      屏幕模块接口
+
+
+                                                                               5V                SCI-UART/IO
+                                                                                     无线模块接口-串口
+
+
+                                                                               5V                 SCI-UART
+                                                                                       调试串口
+                                                                                                            5V
+
+
+
+
+     D                                                                                                                                                                               D
+
+例：
+
+         双向信号：         输出信号：             输入信号：                    电源：                                      Title: RA8D1_DevBoard                              Author: 猫肆管
+                UARTx          UARTx                 UARTx               5V
+                                                                                                           Subtitle: BlockDiagram                             Revision: V1.0.1.1
+         红色字体：需要注意/未确定条目
+                                                                                                           Size: A4     Date: 2025/4/11   Time: 15:07:49   Sheet: 2      of: 5
+
+                    1                                               2                                        3                                                                   4
+     1                           2                             3                                                                                   4
+
+
+
+
+A                                                                                                                                                                  A
+
+
+
+
+                                                    U1A                                                              U1B
+    外设  功能     对应引脚   外设  功能     对应引脚             1                           2                                  81                           82
+                                                     GND                 GND                                          GND               GND
+        PCLK   P708       SCK    PA04   GND
+                                                  3
+                                                  5
+                                                     GND                 GND
+                                                                              4
+                                                                              6
+                                                                                           GND       GND
+                                                                                                                83
+                                                                                                                85
+                                                                                                                      GND               GND
+                                                                                                                                              84
+                                                                                                                                              86
+                                                                                                                                                       GND
+        VSY    P710       MOSI   PA03             7
+                                                     GND                 GND
+                                                                              8                                  87
+                                                                                                                      GND               GND
+                                                                                                                                              88
+        HREF   P709       RST    PA06             9
+                                                     3V3                  3V3
+                                                                              10                                89
+                                                                                                                      3V3                3V3
+                                                                                                                                              90
+        SCL    P706   屏幕 INT     P508            11
+                                                     3V3                  3V3
+                                                                              12                                 91
+                                                                                                                      3V3                3V3
+                                                                                                                                              92
+                                                     3V3                  3V3                                         3V3                3V3
+        SDA    P707       CS     PA05           13
+                                                15
+                                                     5V                    5V
+                                                                              14
+                                                                              16
+                                                                                                                 93
+                                                                                                                 95
+                                                                                                                      5V                  5V
+                                                                                                                                              94
+                                                                                                                                              96
+        D0     P400       MISO   PA02   VCC5V
+                                                17
+                                                     5V                    5V
+                                                                              18
+                                                                                       VCC5V         VCC5V
+                                                                                                                 97
+                                                                                                                      5V                  5V
+                                                                                                                                              98
+                                                                                                                                                     VCC5V
+
+    摄像头 D1     P401                                  5V                    5V                                         5V                  5V
+                          SCK    P412           19
+                                                     PA01               PA02
+                                                                              20    PA02              PA11       99
+                                                                                                                      PA11              PA12
+                                                                                                                                              100 PA12
+        D2     P405   姿态 MOSI    P411    PA03    21
+                                                     PA03               PA04
+                                                                              22    PA04              PA14      101
+                                                                                                                      PA14              P915
+                                                                                                                                              102 P915
+        D3     P406   传感器 MISO   P410
+                                         PA05   23
+                                                25
+                                                     PA05               PA06
+                                                                              24
+                                                                              26
+                                                                                    PA06              P914
+                                                                                                      P912
+                                                                                                               103
+                                                                                                               105
+                                                                                                                      P914              P913
+                                                                                                                                              104
+                                                                                                                                              106 P911
+B       D4     P700       CS     P413    PA15   27
+                                                     PA07               PA13
+                                                                              28                               107
+                                                                                                                      P912               P911
+                                                                                                                                              108 P907             B
+        D5     P701                                  PA15               P600                                          P910             P907
+                      无线 TX      P714           29                            30                               109                            110 P903
+                                                     P102                P105                                         P904             P903
+        D6     P702                             31                            32    P107                         111                          112
+                      模块 RX      P715                P106                P107                                         P902             P200
+        D7     P703                             33                            34                                113                           114
+                      串口 RTS     P206                P800                P801                                         GND               GND
+                                                35                            36                                115                           116
+        A      P107       CMD    P207           37
+                                                     P802
+                                                     P805
+                                                                        P804
+                                                                        P806
+                                                                              38                                117
+                                                                                                                      P314
+                                                                                                                      P313
+                                                                                                                                        P202
+                                                                                                                                       P203
+                                                                                                                                              118
+        Dir    P005       TX     P409
+                                                39
+                                                     P807               P809
+                                                                              40
+                                                                                            GND
+                                                                                                                119
+                                                                                                                      GND               GND
+                                                                                                                                              120
+                                                                                                                                                             GND
+                                                41                            42                                121                           122
+        A      P407
+                      串口 RX      P408                P813               P504                                          P204         USBHS_DM
+                                                43                            44                               123                            124
+        Dir    P006       TX     PA14           45
+                                                     P505               P506
+                                                                              46    P508                       125
+                                                                                                                      P205         USBHS_DP
+                                                                                                                                              126
+    编码器                                              P507               P508                                          GND               GND
+        A      P903       RX     PA15
+                                                47
+                                                49
+                                                     P509                P510
+                                                                              48
+                                                                              50
+                                                                                                      P206
+                                                                                                      P415
+                                                                                                               127
+                                                                                                               129
+                                                                                                                      P206              P207
+                                                                                                                                              128 P207
+                                                                                                                                              130 P414
+        Dir    P007       IO     PB00           51
+                                                     P511                P512
+                                                                              52                      P413      131
+                                                                                                                      P415              P414
+                                                                                                                                              132 P412
+                                                     P513                P514                                         P413              P412
+        A      P907
+                      LED IO     PB01           53                            54    P015              P411     133                            134 P410
+                                                     P515                P015                                         P411              P410
+        Dir    P008       IO     P704
+                                         P014
+                                         P010
+                                                55
+                                                57
+                                                     P014                P011
+                                                                              56
+                                                                              58
+                                                                                                      P409
+                                                                                                      P407
+                                                                                                               135
+                                                                                                               137
+                                                                                                                      P409             P408
+                                                                                                                                              136 P408
+                                                                                                                                              138 P715
+        PWM    PB06       IO     P705    P008   59
+                                                     P010
+                                                     P008
+                                                                        P009
+                                                                        P007
+                                                                              60    P007              P714     139
+                                                                                                                      P407
+                                                                                                                      P714
+                                                                                                                                        P715
+                                                                                                                                        P713
+                                                                                                                                              140 P713
+
+    舵机 PWM     PB07       IO     PB02    P006   61                            62    P005              P712      141                           142
+                                                     P006               P005                                          P712               P711
+        PWM    PA11                      P004   63                            64                      P710     143                            144 P709
+                      按键 IO      PB03                P004               P003                                          P710              P709
+C                                               65                            66                      P708     145                            146 PB07             C
+        PWM    PA12       IO     PB04           67
+                                                     P002                P001
+                                                                              68    P400              PB06     147
+                                                                                                                      P708             PB07
+                                                                                                                                              148 PB05
+                                                     P000               P400                                          PB06             PB05
+        PWM    P415       IO     PB05    P401   69
+                                                     P401               P402
+                                                                              70                      PB04     149
+                                                                                                                      PB04             PB03
+                                                                                                                                              150 PB03
+        PWM    P414   麦克风 ADC    P010    P405
+                                                 71
+                                                73
+                                                     P403               P404
+                                                                              72
+                                                                              74    P406
+                                                                                                      PB02
+                                                                                                      PB00
+                                                                                                                151
+                                                                                                               153
+                                                                                                                      PB02              PB01
+                                                                                                                                              152 PB01
+                                                                                                                                              154 P707
+        PWM    P713                                  P405               P406                                          PB00              P707
+                      扬声器 DAC    P014    P700   75                            76    P701              P706     155                            156 P705
+    有刷 PWM     P712       IO     P015    P702   77
+                                                     P700
+                                                     P702
+                                                                         P701
+                                                                        P703
+                                                                              78    P703              P704     157
+                                                                                                                      P706
+                                                                                                                      P704
+                                                                                                                                        P705
+                                                                                                                                        GND
+                                                                                                                                              158
+    电机 PWM     P912                             79                            80                               159                            160
+        PWM    P911   电池 ADC     P004
+                                        GND          GND                 GND               GND       GND              GND               GND            GND
+
+        PWM    P915   电压                           RA8D1_CoreBoard                                                 RA8D1_CoreBoard
+
+        PWM    P914
+                           引脚表
+
+
+D                                                                                                                                                                  D
+
+
+
+                                                             Title: RA8D1_DevBoard                                              Author: 猫肆管
+
+                                                             Subtitle: Main                                                     Revision: V1.0.1.1
+                                                             Size: A4              Date: 2025/4/11     Time: 15:07:49        Sheet: 3      of: 5
+
+     1                           2                             3                                                                                   4
+                                        1                                                                                                                                   2                                                                                          3                                                                                                                                                 4
+
+
+
+       P8                                                                                                                                                                                                                                                                                                                                                                                                                                            5V电源
+                                                                                                                    VCCBAT
+                      1
+                                                                                                                                                                 VCCBAT                                     VCCBAT                                                                                                                                                                                                                    VCC5V
+
+
+
+
+                                                                                                                D
+                                                                                                    S
+A                     2                                       D1                    1                         Q1                                                             1                                          1                                                                                         C1         100nF                     L1                                                             D2                                         A
+
+
+
+
+                                                                                                            G
+                                                              BZT52C16                                  2    HY19P03                                                                                                             VCCBAT                                                                           0603       50V X7R                    4.7uH       5A
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          4.7K
+                                                                                                                                                                                                                                                                                                                                                                                                 220uF
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                 100nF
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                               51K
+                                                                                                                                                                                                                                                                                                                                                                                  25V X5R
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                         50V X7R
+                                                                                   3                                                                                        2                                           2                                                                                                                                                                                                          SS54
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                          47uF
+    XT60_Header GND                                                                     S1
+                                                              R1                                                                                                                 P1                                         P2                  D3                                                           U2             SCT2450
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                         0603
+                                                              10K                                                                                                    GND                                        GND                             SS54                                                     1                                    8
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                  1206
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                 C3
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                 C4
+                                                                                                                                                                                                                                                                                                                                                                          C2
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                         25V
+                                                                                                                                                                                                                                                                                                             BOOT                   SW
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                     R3
+                                                                                                                                                                                                                                                                                                                                                                                                                                              R2
+                                                                                                                                                                                                                                                                                                         2                                    7
+
+
+
+
+                                                                                                                                                                                                                                                                                                                         EP/GND
+                                                                                                                                                                                                                                                                                                             VIN                   GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                          1.5K
+                                                                                                                                                                                                                                                                                                         3                                    6     R4                                      C5           4.7nF
+                                                                                                                                                                                                                                                                                                             EN                   COMP
+
+
+
+
+                                                                                                                                                                                                                                  100uF
+
+
+
+
+                                                                                                                                                                                                                                                                     100nF
+                                                                                                                                                                                                                                                  4.7uF
+                                                                                                                                                                                                                                                          35V X5R
+
+
+
+
+                                                                                                                                                                                                                                                                             50V X7R
+                                                                                                                                                                                                                                                                                                         4                                    5                     20K                     0603         50V X7R
+                                                                                                                                                                                                                                                                                                             RT/CLK                  FB
+                                            GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          LED1
+                                                                                  电源接口/开关                                                       电机电源接口
+
+
+
+
+                                                                                                                                                                                                                                                                                               200K
+
+
+
+
+                                                                                                                                                                                                                                                                                                                       0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                             R5
+                                                                                                                                                                                                                                                                             0603
+                                                                                                                                                                                                                                                                     C8
+                                                                                                                                                                                                                                  C6
+
+
+
+
+                                                                                                                                                                                                                                                          1206
+                                                                                                                                                                                                                                                  C7
+                                                                                                                                                                                                                                          35V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                          10K
+                                                                                                                                                                                                                                                                                       R6
+                                                                                                                                                                                                                        舵机电源
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                          R7
+B                                                                                                                                                                                                                                                                                                                        GND                                                                                                                                     B
+                                                                                                                                                                                               VCCServo
+                                                                                    C9         100nF                    L2
+                                                                                    0603       50V X7R                   4.7uH      5A
+
+
+
+
+                                                                                                                                                             220uF
+
+
+                                                                                                                                                                             100nF
+
+
+
+
+                                                                                                                                                                                                      27K
+
+
+                                                                                                                                                                                                                     10K
+                                                                                                                                                25V X5R
+
+
+
+
+                                                                                                                                                                                     50V X7R
+                                                                                                                                         47uF
+                                                                             U3              SCT2450
+                                                                                                                                         C10
+
+
+
+
+                                                                                                                                                                             C12
+                                                                                                                                                                                                                                                                                                                                                                                                                                               3V3电源
+                                                                                                                                                             C11
+
+
+
+
+                                                                                                                                                                                     0603
+       VCCBAT                                                           1                                       8                               1206
+
+
+
+
+                                                                                                                                                                     25V
+                                                                             BOOT                     SW
+
+
+
+
+                                                                                                                                                                                                R8
+
+
+                                                                                                                                                                                                                R9
+                                                                        2                                       7
+                                                                                           EP/GND
+
+
+
+
+                                                                             VIN                     GND
+                                                                        3                                       6       R10                               C13        4.7nF                                                                                           VCC5V                                                                                            VCC3V3
+
+
+
+
+                                                                                                                                                                                                          50K
+                                                                             EN                     COMP
+        100uF
+
+
+
+
+                                            100nF
+                      4.7uF
+                              35V X5R
+
+
+
+
+                                                    50V X7R
+
+
+
+
+                                                                        4                                       5                   20K                   0603       50V X7R                                                                                                                                                U4     TP5108E23E-33                          R11
+                                                                             RT/CLK                    FB
+                                                                                                                                                                                                                                                                                                                    1                              5                                                           2.7K
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                         LED3
+                                                                                                                                                                                                                     LED2
+                                                                                                                                                                                                                                                                                                                              IN          OUT
+
+
+
+
+                                                                                                                                                                                                                                                                                       100nF
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                          100nF
+                                                                                                                                                                                                                                                                                               50V X7R
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                  50V X7R
+                                                                                                                                                                                                                                                                                                                    2
+
+
+
+
+                                                                                                                                                                                                                                                                     10uF
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                          10uF
+                                                                      200K
+
+
+
+
+                                                                                                                                                                                                    R12
+                                                                                                                                                                                                                                                                                                                              GND
+                                            C16
+                      C15
+        C14
+
+
+
+
+                                                                                         0
+                                                    0603
+
+
+
+
+                                                                                                                                                                                                                                                                                                                    3                              4
+                              1206
+                35V
+
+
+
+
+                                                                                                                                                                                                8.2K
+                                                                                                                                                                                                                                                                                                                              EN             NC
+
+
+
+
+                                                                                                                                                                                                                                                                             TanCap
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                 TanCap
+
+
+                                                                                                                                                                                                                                                                                                                                                                          C20
+                                                                                                                                                                                                                                                                                       C18
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                          C19
+                                                                                                                                                                                                                                                                     C17
+
+
+
+
+                                                                                                                                                                                                                                                                                               0603
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                  0603
+                                                                                                                                                                                                                                                                             3216
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                 3216
+                                                                                                                                                                                                                                                                             16V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                 16V
+                                                                R13
+
+
+
+
+                                                                                                                                                                                                R14
+
+
+
+C                                                                                                                                                                                                                                                                                                                                      GND                                                                                                                       C
+
+                                                                                                                                                                                                                GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                     摄像头电源
+                      P3 Header-D-M 1x3P                                          P4 Header-D-M 1x3P                   P5 Header-D-M 1x3P                                  P6 Header-D-M 1x3P
+
+                                                                                                                                                                                                                                                                     VCC5V                                                                                           VCCCAM
+                          1
+                          2
+                          3
+
+
+
+
+                                                                                   1
+                                                                                   2
+                                                                                   3
+
+
+
+
+                                                                                                                        1
+                                                                                                                        2
+                                                                                                                        3
+
+
+
+
+                                                                                                                                                                            1
+                                                                                                                                                                            2
+                                                                                                                                                                            3
+
+
+
+
+                                                                                                                                                                                                                                                                                                                            U5     TP5108E23E-33                         R15
+                                                                                                                                                                                                                                                                                                                    1                              5                                                           2.7K
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                         LED4
+                                                                                                                                                                                                                                                                                                                              IN          OUT
+
+
+
+
+                                                                                                                                                                                                                                                                                       100nF
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                          100nF
+                                                                                                                                                                                                                                                                                               50V X7R
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                  50V X7R
+                                                                                                                                                                                                                                                                                                                    2
+
+
+
+
+                                                                                                                                                                                                                                                                     10uF
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                          10uF
+                                                                                                                                                                                                                                                                                                                              GND
+                                                                  PB06                                        PB07                                PA11                                                      PA12                                                                                                    3                              4
+                                                                                                                                                                                                                                                                                                                              EN             NC
+                                        R16                     100R                       R17              100R              R18               100R                                  R19                 100R
+
+
+
+
+                                                                                                                                                                                                                                                                             TanCap
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                 TanCap
+                                                                                                                                                                                                                                                                                       C22
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                          C23
+
+
+                                                                                                                                                                                                                                                                                                                                                                          C24
+                                                                                                                                                                                                                                                                     C21
+
+
+
+
+                                                                                                                                                                                                                                                                                               0603
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                  0603
+                                                                                                                                                                                                                                                                             3216
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                 3216
+                                                                                                                                                                                                                                                                             16V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                 16V
+        GND
+
+      VCCServo
+                                                                                                                                                                                                                                                                                                                                       GND
+D                                                                                                                                                                                                                                                                                                                                                                                                                                                                D
+
+
+
+                                                                                                                                                                                                                                                                    Title: RA8D1_DevBoard                                                                                          Author: 猫肆管
+
+                                                                                                                                                                                                                                                                    Subtitle: Power                                                                                                Revision: V1.0.1.1
+                                                                                                                                                                                                                                                                    Size: A4                                 Date: 2025/4/11                 Time: 15:07:49               Sheet: 4                              of: 5
+
+                                        1                                                                                                                                   2                                                                                          3                                                                                                                                                 4
+                                  1                                                                                                              2                                                                                                                           3                                                                                    4
+
+
+                  P7
+    P400   16                         15 P708                                                                                                             VCC3V3                                    VCC3V3
+                   D0     PCLK
+    P401   14                         13                                                                                                                                                                R20
+                   D1      GND                                       GND
+
+
+
+
+                                                                                                                               R21
+    P405   12                         11 P706                                                                                                                                                           R22             10K
+                   D2      TXD
+
+
+
+
+                                                                                                                                     10K
+    P406   10                         9 P707                                                                                                                                                            R43             10K
+                   D3      RXD
+
+
+
+
+                                                                                                                                                           100nF
+                                                                                                                                                                   50V X7R
+A   P700    8                         7 P709                                                                                                                                                            R44             10K                                                                                                                                                                                  A
+                   D4     HREF
+    P701    6                         5 P710                                                                                                                                                                            10K
+
+
+
+
+                                                                                                                                                                                                                                 12 P413
+                                                                                                                                                                                                                                 13 P412
+                                                                                                                                                                                                                                 14 P411
+                   D5      VSY
+    P702    4                         3                                                                                                                                                                                                                                                      VCC5V                  P9                                          P10
+
+
+
+
+                                                                                                                                                                                                    P410
+                   D6      GND
+
+
+
+
+                                                                                                                                                           C26
+                                                                                                                                                                   0603
+                                                                                                                                     10K
+    P703    2                         1                                                                                                                                                                                                                       U6                                                                                 P714
+                   D7       3V3                                   VCCCAM                                                                                                                                                                                                                                             1                                            1            2
+                                                                                         VCC3V3                                                                                                                                                             BMI270                                                                               P715                                     P206
+
+
+
+
+                                                                                                                                                                                                           510R
+                                                                                                                                                                                                                                                                                                                     2                                            3            4
+                  Header 8X2                                                                                                                                                                                                                                                                         P408
+
+
+
+
+                                                                                                                               R45
+
+
+
+
+                                                                                                                                                                                                                                  CSB
+                                                                                                                                                                                                                                  SDx
+                                                                                                                                                                                                                                  SCx
+                                                                                                                                                                                                                                                                                                                     3                 GND                        5            6                       GND
+                                                                                                                                                                                                                                                                                                     P409                                                                                 P207
+                                                                                                                                                                                                                                                                                                                     4                                            7            8
+                                  摄像头接口                                           MIC1
+                                                                                             R46
+                                                                                             10K                                         GND                                                                  1                              X                        11
+                                                                                                                                                                                                                                                                                              GND
+                                                                                                                                                                                                                                                                                                            Header-D-M 1x4P           VCC5V                Header-D-F 2x4P
+
+
+
+
+                                                                                                                                                                                                    R47
+                                                                                                                                                                                                                   SDO                                      OSDO
+                                                                                              C27      100nF               1                                                 5                                2                                                       10                                                                  L3                C34    47uF
+                                                                                    +                                           IN+                       VCC                                                      ASDx                                     OCSB                                                                                                                                 GND
+                                                                                    -
+                                                                                                0603   50V X7R             2
+                                                                                                                                GND
+                                                                                                                                                                                                              3
+                                                                                                                                                                                                                   ASCx       Y              Z               INT2
+                                                                                                                                                                                                                                                                      9                                                                    4.7uH     5A         3528        TanCap 10V
+
+                                                                                                                           3                                                 4                                4                                                       8
+                                                                                                                                IN-                       OUT                                                      INT1                                      VDD
+                                                                                  MIC
+
+
+
+
+                                                                                                                                                                             P010
+      VCC5V
+
+
+
+
+                                                                                                                                                                                                                                  GNDIO
+                                                                                                                                                                                                                                  VDDIO
+                                                                                                                               U7                        LMV321
+                         P508
+                         PA06
+
+                         PA05
+                         PA04
+                         PA03
+
+
+
+
+                         PA02
+
+
+
+
+                                                                                                                                                                                                                                  GND
+                                                                                                                                R48
+      GND
+                                                                                                                                                           100K
+                                                                                                                                                                                                                                                                                                                     串口                              无线模块接口-串口
+                                                Header-D-F 2x8P
+
+
+
+
+                                                                                                                                                                                                                                 5
+                                                                                                                                                                                                                                 6
+                                                                                                                                                                                                                                 7
+                                                                                          GND                                                                                                         VCC3V3                                                   VCC3V3
+                   10
+                   12
+                   14
+                    2
+
+
+
+
+                   16
+                    4
+                    6
+                    8
+
+
+
+
+                                                                                                                                                                                                                    C28     100nF                    C29    100nF
+B                                                                                                                                                                                                                   0603    50V X7R                  0603   50V X7R                                                                                                                                          B
+                   13
+                   15
+                   11
+            P13
+
+                   1
+                   3
+                   5
+                   7
+                   9
+
+
+
+
+                                                                                                                                                              麦克风                                                                                       姿态传感器
+                                                                                                                                                                                                                                      GND
+
+                                                                                                                                                                                                                                                                                                                                            VCC3V3
+                                                                                                                                                                                                                                                                                                                                               R23                                        PB00
+                                         屏幕接口                                                                                                                                                                                                                                                VCC5V                  P12                                    1K                      LED5
+
+                                                                                                                                                                                                                                                                                                                     1
+                                                                                                                  VCC3V3                                                     U8         NS4150B                                                                                                                                                R26                                        PB01
+                                                                                                                                                                                                                                                                                                                     2
+                                                                                                                      R49                P015                            1                             8                    P11                                                                      PA15                                                  1K                      LED6
+                                                                                                                                                                                 CTRL VOP                                                                                                                            3
+                                                                                                                                       10K                               2                             7                                                                                             PA14
+                                                                                                                                                                                 BYPS GND                                     1                                                                                      4
+                       P004       C25    100nF                                              P014       C30       100nF R50                                               3                             6                                             GND                                      GND                                              R51                                        P704
+                                                                                                                                                                                 INP  VDD                                     2
+     VCCBAT                       0603   50V X7R                                                       0603      50V X7R               100K                              4                             5                                                                                                    Header-D-M 1x4P                                1K                      LED7
+                                                                                                                                                                                 INN  VON
+         R24                   R25                                                                     C31       100nF R52                                                                                          MX1.25-2P-D-V VCC5V
+                         10K               1K                                                          0603      50V X7R               100K                        C32       1uF             C33     22uF           FB1                                                                                                                        R53                                        P705
+                                                                                                                                                                   0603      25V X7R         0805    25V X5R                  120R                                                                                                                         1K                      LED8
+                                                   GND
+                                                                                                GND                                                                                    GND
+
+C                             电池电压测量                                                                                                                                                                                                                                  扬声器                                            串口                                                                          LED         C
+
+
+
+
+                                                                                                                           GND                                                                                             GND                                                        P14     GH1.25-6P       P15         GH1.25-6P   P16       GH1.25-6P             P17           GH1.25-6P
+     VCC3V3
+
+
+
+
+                                                                                                                                                                                                                                                                                       B/Dir
+
+
+                                                                                                                                                                                                                                                                                       GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                B/Dir
+
+
+                                                                                                                                                                                                                                                                                                                GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                       B/Dir
+
+
+                                                                                                                                                                                                                                                                                                                                       GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                       B/Dir
+
+
+                                                                                                                                                                                                                                                                                                                                                                       GND
+                                                                                                                                                                                                                                                                                       VCC
+
+
+
+
+                                                                                                                                                                                                                                                                                                                VCC
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                       VCC
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                       VCC
+                 R27                                                                               P911                  R28   R29                           P912                               P414                R30     R31                        P415
+
+
+
+
+                                                                                                                                                                                                                                                                                       NC
+
+
+
+
+                                                                                                                                                                                                                                                                                                                NC
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                       NC
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                       NC
+                                                                                                                                                                                                                                                                                       A
+
+
+
+
+                                                                                                                                                                                                                                                                                                                A
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                       A
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                       A
+                                                                                                                                                                                                                                                                                       Z
+
+
+
+
+                                                                                                                                                                                                                                                                                                                Z
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                       Z
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                       Z
+            PB02 R32              4.7K                                                               100R                                                  100R                                   100R                                               100R
+                                  100R                                 S2
+                 R33                                                                                                                                                                                                                                                                                                                                                                         VCC5V
+                                                                                                                                       Header-D-M 2x3P
+
+
+
+
+                                                                                                                                                                                                                                   Header-D-M 2x3P
+            PB03 R34              4.7K
+                                                                                                                           1
+
+
+
+
+                                                                                                                                                                                                                        1
+                                                                                                                           5
+                                                                                                                           3
+
+
+
+
+                                                                                                                                                                                                                        5
+                                                                                                                                                                                                                        3
+
+
+
+                                  100R                                 S3
+                 R35
+                                                                                                                   P18
+
+
+
+
+                                                                                                                                                                                                                  P19
+
+
+
+
+            PB04 R36              4.7K
+                                                                                                                           6
+                                                                                                                           4
+                                                                                                                           2
+
+
+
+
+                                                                                                                                                                                                                        6
+                                                                                                                                                                                                                        4
+                                                                                                                                                                                                                        2
+
+
+
+
+                                  100R                                 S4                                                                                                                                                                                                                                                                                                                        GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                               P008
+                                                                                                                                                                                                                                                                                                                    P006
+                                                                                                                                                                                                                                                                                            P005
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                             P903
+                                                                                                                                                                                                                                                                                                                                             P007
+                                                                                                                                                                                                                                                                                                                    P407
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                               P907
+                                                                                                                                                                                                                                                                                            P107
+                 R37
+            PB05 R38              4.7K                                                             P914                                                      P915                               P712                                                   P713
+D                                 100R                                 S5                            100R                R39   R40                         100R                                   100R              R41     R42                      100R
+                                                                                                                                                                                                                                                                                                                                                                               编码器接口                         D
+
+                                                                            GND                                            GND                                                                                             GND
+
+                                                                                                                                                                                                                                                                           Title: RA8D1_DevBoard                                             Author: 猫肆管
+
+                                                                              按键                                                                                                                              有刷电机信号接口 Subtitle: Devices                                                                                                     Revision: V1.0.1.1
+                                                                                                                                                                                                                                                                           Size: A4           Date: 2025/4/11        Time: 15:07:49     Sheet: 5          of: 5
+
+                                  1                                                                                                              2                                                                                                                           3                                                                                    4
+

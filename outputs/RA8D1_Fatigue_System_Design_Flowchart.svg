@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef5ff"/><stop offset="0.48" stop-color="#f8fbff"/><stop offset="1" stop-color="#eef8f4"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2457ff"/><stop offset="1" stop-color="#12b3a8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#19345f" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrowHead" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto">
+      <path d="M 0 0 L 13 6.5 L 0 13 z" fill="#4f7cff"/>
+    </marker>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#dce7f7" stroke-width="1" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <rect width="1800" height="1120" fill="url(#bg)"/>
+  <rect width="1800" height="1120" fill="url(#grid)" opacity="0.65"/>
+
+  <text x="90" y="80" text-anchor="start" font-size="42" font-weight="800" fill="#13213b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">RA8D1 ??????????????</text>
+  <text x="90" y="122" text-anchor="start" font-size="22" font-weight="500" fill="#5c6f8c" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">Camera ? ROI ? Lightweight CNN ? Temporal Decision ? Voice / Bluetooth Output</text>
+
+  <rect x="86" y="165" width="1628" height="585" rx="36" fill="#ffffff" opacity="0.62" stroke="#d9e5f6" stroke-width="2"/>
+  <text x="122" y="215" text-anchor="start" font-size="28" font-weight="800" fill="#2457ff" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">??????</text>
+
+  
+    <g filter="url(#softShadow)">
+      <rect x="120" y="260" width="285" height="205" rx="28" fill="#ffffff" stroke="#d9e2f2" stroke-width="2"/>
+      <rect x="120" y="260" width="285" height="14" rx="7" fill="#4f7cff"/>
+      <circle cx="162" cy="304" r="16" fill="#4f7cff" opacity="0.14"/>
+      <circle cx="162" cy="304" r="8" fill="#4f7cff"/>
+      <text x="277.5" y="313" text-anchor="middle" font-size="28" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?????</text>
+      <text x="262.5" y="338" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">MT9V03X ???</text>
+<text x="262.5" y="369" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">320?120 ????</text>
+<text x="262.5" y="400" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">??? / ????</text>
+    </g>
+    
+  
+    <g filter="url(#softShadow)">
+      <rect x="455" y="260" width="285" height="205" rx="28" fill="#ffffff" stroke="#d9e2f2" stroke-width="2"/>
+      <rect x="455" y="260" width="285" height="14" rx="7" fill="#6c63ff"/>
+      <circle cx="497" cy="304" r="16" fill="#6c63ff" opacity="0.14"/>
+      <circle cx="497" cy="304" r="8" fill="#6c63ff"/>
+      <text x="612.5" y="313" text-anchor="middle" font-size="28" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????</text>
+      <text x="597.5" y="338" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????? ROI</text>
+<text x="597.5" y="369" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">??? 64?32</text>
+<text x="597.5" y="400" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????? /255</text>
+    </g>
+    
+
+  <g filter="url(#softShadow)">
+    <rect x="790" y="236" width="330" height="252" rx="34" fill="url(#centerGrad)"/>
+    <text x="955" y="286" text-anchor="middle" font-size="30" font-weight="800" fill="#ffffff" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">RA8D1 ????</text>
+    <text x="955" y="330" text-anchor="middle" font-size="21" font-weight="600" fill="#e9f2ff" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">??? CNN ?????</text>
+    <rect x="825" y="356" width="260" height="88" rx="18" fill="#ffffff" opacity="0.16"/>
+    <text x="955" y="390" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">Conv ? Pool ? Conv ? Pool</text>
+    <text x="955" y="420" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">Dense ? normal / fatigued</text>
+  </g>
+
+  
+    <g filter="url(#softShadow)">
+      <rect x="1170" y="260" width="285" height="205" rx="28" fill="#ffffff" stroke="#d9e2f2" stroke-width="2"/>
+      <rect x="1170" y="260" width="285" height="14" rx="7" fill="#ff9f43"/>
+      <circle cx="1212" cy="304" r="16" fill="#ff9f43" opacity="0.14"/>
+      <circle cx="1212" cy="304" r="8" fill="#ff9f43"/>
+      <text x="1327.5" y="313" text-anchor="middle" font-size="28" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?????</text>
+      <text x="1312.5" y="338" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????? / ???</text>
+<text x="1312.5" y="369" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">??????</text>
+<text x="1312.5" y="400" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?? / ??????</text>
+    </g>
+    
+  
+    <g filter="url(#softShadow)">
+      <rect x="1490" y="224" width="190" height="148" rx="28" fill="#ffffff" stroke="#d9e2f2" stroke-width="2"/>
+      <rect x="1490" y="224" width="190" height="14" rx="7" fill="#ff5d73"/>
+      <circle cx="1532" cy="268" r="16" fill="#ff5d73" opacity="0.14"/>
+      <circle cx="1532" cy="268" r="8" fill="#ff5d73"/>
+      <text x="1600.0" y="277" text-anchor="middle" font-size="28" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????</text>
+      <text x="1585.0" y="302" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?????</text>
+<text x="1585.0" y="333" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">??????</text>
+    </g>
+    
+  
+    <g filter="url(#softShadow)">
+      <rect x="1490" y="420" width="190" height="148" rx="28" fill="#ffffff" stroke="#d9e2f2" stroke-width="2"/>
+      <rect x="1490" y="420" width="190" height="14" rx="7" fill="#12b3a8"/>
+      <circle cx="1532" cy="464" r="16" fill="#12b3a8" opacity="0.14"/>
+      <circle cx="1532" cy="464" r="8" fill="#12b3a8"/>
+      <text x="1600.0" y="473" text-anchor="middle" font-size="28" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????</text>
+      <text x="1585.0" y="498" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">HC-05 ??</text>
+<text x="1585.0" y="529" text-anchor="middle" font-size="21" font-weight="500" fill="#43536b" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">Android App</text>
+    </g>
+    
+
+  <line x1="405" y1="362" x2="455" y2="362" stroke="#4f7cff" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHead)" />
+  <line x1="740" y1="362" x2="790" y2="362" stroke="#4f7cff" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHead)" />
+  <line x1="1120" y1="362" x2="1170" y2="362" stroke="#4f7cff" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHead)" />
+  <path d="M 1455 332 C 1472.5 332, 1472.5 298, 1490 298" fill="none" stroke="#ff5d73" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHead)" />
+  <path d="M 1455 408 C 1472.5 408, 1472.5 494, 1490 494" fill="none" stroke="#12b3a8" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHead)" />
+
+  <g><rect x="128" y="570" width="455" height="118" rx="26" fill="#f6f9ff" stroke="#d8e4f7" stroke-width="2"/><text x="355" y="614" text-anchor="middle" font-size="23" font-weight="800" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????</text><text x="355" y="652" text-anchor="middle" font-size="19" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?? SDRAM ? UART ? DAC/?? ? FSP/?????</text></g>
+  <g><rect x="645" y="570" width="510" height="118" rx="26" fill="#f6fffb" stroke="#cfeee7" stroke-width="2"/><text x="900" y="614" text-anchor="middle" font-size="23" font-weight="800" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">???????</text><text x="900" y="652" text-anchor="middle" font-size="19" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">??? TFLite?C ?????????????????</text></g>
+  <g><rect x="1218" y="570" width="430" height="118" rx="26" fill="#fff8f2" stroke="#ffe0bf" stroke-width="2"/><text x="1433" y="614" text-anchor="middle" font-size="23" font-weight="800" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????</text><text x="1433" y="652" text-anchor="middle" font-size="19" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?? ? ???? ? ???? ? ??????</text></g>
+
+  <rect x="86" y="795" width="1628" height="245" rx="36" fill="#ffffff" opacity="0.68" stroke="#d9e5f6" stroke-width="2"/>
+  <text x="122" y="845" text-anchor="start" font-size="28" font-weight="800" fill="#12a594" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?????????</text>
+
+  
+    <g filter="url(#softShadow)">
+      <rect x="128" y="880" width="245" height="105" rx="22" fill="#ffffff" stroke="#dce6f5" stroke-width="2"/>
+      <rect x="150" y="902" width="8" height="61" rx="4" fill="#4f7cff"/>
+      <text x="260.5" y="926" text-anchor="middle" font-size="24" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????</text>
+      <text x="260.5" y="962" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">EXPORT_MODE</text>
+<text x="260.5" y="988" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">???? ROI ??</text>
+    </g>
+    
+  
+    <g filter="url(#softShadow)">
+      <rect x="430" y="880" width="245" height="105" rx="22" fill="#ffffff" stroke="#dce6f5" stroke-width="2"/>
+      <rect x="452" y="902" width="8" height="61" rx="4" fill="#6c63ff"/>
+      <text x="562.5" y="926" text-anchor="middle" font-size="24" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????</text>
+      <text x="562.5" y="962" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">normal / fatigued</text>
+<text x="562.5" y="988" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?????</text>
+    </g>
+    
+  
+    <g filter="url(#softShadow)">
+      <rect x="732" y="880" width="245" height="105" rx="22" fill="#ffffff" stroke="#dce6f5" stroke-width="2"/>
+      <rect x="754" y="902" width="8" height="61" rx="4" fill="#ff9f43"/>
+      <text x="864.5" y="926" text-anchor="middle" font-size="24" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????</text>
+      <text x="864.5" y="962" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">Keras ?? CNN</text>
+<text x="864.5" y="988" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?????</text>
+    </g>
+    
+  
+    <g filter="url(#softShadow)">
+      <rect x="1034" y="880" width="245" height="105" rx="22" fill="#ffffff" stroke="#dce6f5" stroke-width="2"/>
+      <rect x="1056" y="902" width="8" height="61" rx="4" fill="#ff5d73"/>
+      <text x="1166.5" y="926" text-anchor="middle" font-size="24" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">????</text>
+      <text x="1166.5" y="962" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">fatigue_model.h5</text>
+<text x="1166.5" y="988" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">?? cnn_weights.h</text>
+    </g>
+    
+  
+    <g filter="url(#softShadow)">
+      <rect x="1336" y="880" width="300" height="105" rx="22" fill="#ffffff" stroke="#dce6f5" stroke-width="2"/>
+      <rect x="1358" y="902" width="8" height="61" rx="4" fill="#12b3a8"/>
+      <text x="1496.0" y="926" text-anchor="middle" font-size="24" font-weight="700" fill="#172b4d" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">??????</text>
+      <text x="1496.0" y="962" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">Keil / RA ????</text>
+<text x="1496.0" y="988" text-anchor="middle" font-size="18" font-weight="500" fill="#52627a" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">RA8D1 ?????</text>
+    </g>
+    
+
+  <line x1="373" y1="932" x2="430" y2="932" stroke="#12a594" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHead)" />
+  <line x1="675" y1="932" x2="732" y2="932" stroke="#12a594" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHead)" />
+  <line x1="977" y1="932" x2="1034" y2="932" stroke="#12a594" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHead)" />
+  <line x1="1279" y1="932" x2="1336" y2="932" stroke="#12a594" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHead)" />
+
+  <text x="90" y="1082" text-anchor="start" font-size="18" fill="#718096" font-family="Microsoft YaHei, SimHei, Arial, sans-serif">???????hal_entry.c ? fatigue_detect.c ? cnn_inference.c ? cnn_weights.h??????collect_frames.py ? augment_data.py ? train_cnn.py ? export_model.py</text>
+</svg>
