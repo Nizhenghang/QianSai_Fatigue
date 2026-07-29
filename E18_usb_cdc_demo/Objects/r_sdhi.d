@@ -1,5 +1,5 @@
 ./objects/r_sdhi.o: \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_sdhi\r_sdhi.c \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_sdhi\r_sdhi.c \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\string.h \
   ra\fsp\inc\instances\r_sdhi.h ra\fsp\inc\api\bsp_api.h \
   ra\fsp\inc\api\fsp_common_api.h \
@@ -52,4 +52,4 @@
   ra\fsp\inc\api\..\..\src\bsp\mcu\all\bsp_mcu_api.h \
   ra_cfg\fsp_cfg\r_sdhi_cfg.h ra\fsp\inc\api\r_sdmmc_api.h \
   ra\fsp\inc\api\r_transfer_api.h \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_sdhi\r_sdhi_private.h
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_sdhi\r_sdhi_private.h

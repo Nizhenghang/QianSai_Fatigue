@@ -1,5 +1,5 @@
 ./objects/common_data.o: \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra_gen\common_data.c \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra_gen\common_data.c \
   ra_gen\common_data.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ra\fsp\inc\api\bsp_api.h ra\fsp\inc\api\fsp_common_api.h \

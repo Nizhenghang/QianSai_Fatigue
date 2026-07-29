@@ -1,5 +1,5 @@
 ./objects/r_usb_basic.o: \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\r_usb_basic.c \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\r_usb_basic.c \
   ra\fsp\inc\api\bsp_api.h ra\fsp\inc\api\fsp_common_api.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\assert.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
@@ -52,11 +52,11 @@
   ra\fsp\inc\instances\r_usb_basic.h ra_cfg\fsp_cfg\r_usb_basic_cfg.h \
   ra\fsp\inc\api\r_usb_basic_api.h ra\fsp\inc\api\r_transfer_api.h \
   ra\fsp\inc\api\..\..\src\r_usb_basic\src\driver\inc\r_usb_basic_define.h \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\src\driver\inc\r_usb_typedef.h \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\src\driver\inc\r_usb_typedef.h \
   ra\fsp\src\r_usb_basic\src\driver\inc\r_usb_cstd_rtos.h \
   ra\fsp\src\r_usb_basic\src\driver\inc\r_usb_typedef.h \
   ra\fsp\src\r_usb_basic\src\driver\inc\r_usb_basic_define.h \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\src\driver\inc\r_usb_extern.h \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\src\hw\inc\r_usb_bitdefine.h \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\src\hw\inc\r_usb_reg_access.h \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\src\driver\inc\r_usb_extern.h \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\src\hw\inc\r_usb_bitdefine.h \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_usb_basic\src\hw\inc\r_usb_reg_access.h \
   ra\fsp\inc\api\r_usb_pcdc_api.h ra_cfg\fsp_cfg\r_usb_pcdc_cfg.h

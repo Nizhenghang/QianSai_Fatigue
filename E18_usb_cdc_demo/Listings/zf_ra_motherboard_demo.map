@@ -7544,56 +7544,56 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       306          6     115951          0          1       1847   audio_player.o
-      1492          0          0          0         44      47898   bsp_clocks.o
-         8          0         78          0          0       9814   bsp_common.o
-       226          0          0          0          0       1493   bsp_delay.o
-       192          0          0          0         64      13504   bsp_group_irq.o
-         0          0          0          0          4        527   bsp_io.o
-        76          0          0          0        384      14742   bsp_irq.o
-       266          0          8          0          8      34672   bsp_register_protection.o
-         0          0        104          0          0       1431   bsp_rom_registers.o
-         0          0         48          0          0       1058   bsp_security.o
-      1842          8      30472          0      30056       4730   cnn_inference.o
-         0          0         12          0          8      17685   common_data.o
-      2630          4        476          0       2123      18973   fatigue_detect.o
-         0          0        213          8        144     123126   hal_data.o
-       150          0        156          0          0       7734   hal_entry.o
-      1012         16        355          1          9       3605   hmi_display.o
-        20          0          0          0          0        445   main.o
-         0          0        932          0          0       8080   pin_data.o
-       368          0          0          0          0      95364   r_adc.o
-       322          0          0          0          0      65370   r_agt.o
-      1750          0         20          0          0      34088   r_ceu.o
-      1008          0         20          0          0      18931   r_dac.o
-         0          0          0        384          0      24780   r_dtc.o
-      1744          0         58          0          0      68101   r_ioport.o
-       624          0          0          0          0      71881   r_sci_b_spi.o
-      3400          0         75          0          0      80430   r_sci_b_uart.o
-      1060          0          0          0          0      81665   r_sdhi.o
-      1040          0          0          0          0      72581   r_spi_b.o
-         0          0          0          0          4      47057   r_usb_basic.o
-        90          0          0          0          0      47866   r_usb_creg_access.o
-       384          0          0          0          0      49443   r_usb_mcu.o
-       140          0          0          0         68      16241   r_usb_pinthandler_usbip0.o
-      1214          0          0          0          2      36466   r_usb_preg_abs.o
-        96          0          0          0          0      22334   r_usb_preg_access.o
-       412          0          0          0          0      18618   ra_driver_sdram.o
-        18          0         64          0      73728       1007   startup.o
-       846          0          0          0          4      46457   system.o
-         0          0        576          0          0      11001   vector_data.o
-       142          0         60          0          1       1990   voice_assistant.o
-       136          0          0          0          1       2019   zf_common_debug.o
-      1490        176          0          0          0       7852   zf_common_function.o
-       162          0          0         40      38401      16398   zf_device_mt9v03x.o
-        78          0          0          0          0       7798   zf_driver_dac.o
-        38          0          0          0          0        875   zf_driver_delay.o
-       120          0          0          0          0       8083   zf_driver_gpio.o
-      1094          0          0          0          0      14557   zf_driver_soft_iic.o
-       210          0          0          0          5      10575   zf_driver_uart.o
+       306          6     115951          0          1       1855   audio_player.o
+      1492          0          0          0         44      47922   bsp_clocks.o
+         8          0         78          0          0       9838   bsp_common.o
+       226          0          0          0          0       1517   bsp_delay.o
+       192          0          0          0         64      13528   bsp_group_irq.o
+         0          0          0          0          4        551   bsp_io.o
+        76          0          0          0        384      14766   bsp_irq.o
+       266          0          8          0          8      34696   bsp_register_protection.o
+         0          0        104          0          0       1455   bsp_rom_registers.o
+         0          0         48          0          0       1082   bsp_security.o
+      1842          8      30472          0      30056       4738   cnn_inference.o
+         0          0         12          0          8      17709   common_data.o
+      2630          4        476          0       2123      18981   fatigue_detect.o
+         0          0        213          8        144     123150   hal_data.o
+       150          0        156          0          0       7742   hal_entry.o
+      1012         16        355          1          9       3613   hmi_display.o
+        20          0          0          0          0        469   main.o
+         0          0        932          0          0       8104   pin_data.o
+       368          0          0          0          0      95388   r_adc.o
+       322          0          0          0          0      65394   r_agt.o
+      1750          0         20          0          0      34112   r_ceu.o
+      1008          0         20          0          0      18955   r_dac.o
+         0          0          0        384          0      24804   r_dtc.o
+      1744          0         58          0          0      68125   r_ioport.o
+       624          0          0          0          0      71905   r_sci_b_spi.o
+      3400          0         75          0          0      80454   r_sci_b_uart.o
+      1060          0          0          0          0      81689   r_sdhi.o
+      1040          0          0          0          0      72605   r_spi_b.o
+         0          0          0          0          4      47081   r_usb_basic.o
+        90          0          0          0          0      47890   r_usb_creg_access.o
+       384          0          0          0          0      49467   r_usb_mcu.o
+       140          0          0          0         68      16265   r_usb_pinthandler_usbip0.o
+      1214          0          0          0          2      36490   r_usb_preg_abs.o
+        96          0          0          0          0      22358   r_usb_preg_access.o
+       412          0          0          0          0      18626   ra_driver_sdram.o
+        18          0         64          0      73728       1031   startup.o
+       846          0          0          0          4      46481   system.o
+         0          0        576          0          0      11025   vector_data.o
+       142          0         60          0          1       1998   voice_assistant.o
+       136          0          0          0          1       2027   zf_common_debug.o
+      1490        176          0          0          0       7860   zf_common_function.o
+       162          0          0         40      38401      16406   zf_device_mt9v03x.o
+        78          0          0          0          0       7806   zf_driver_dac.o
+        38          0          0          0          0        883   zf_driver_delay.o
+       120          0          0          0          0       8091   zf_driver_gpio.o
+      1094          0          0          0          0      14565   zf_driver_soft_iic.o
+       210          0          0          0          5      10583   zf_driver_uart.o
 
     ----------------------------------------------------------------------
-     26896        218     149694       1404     146124    1291192   Object Totals
+     26896        218     149694       1404     146124    1292080   Object Totals
          0          0          0          0       1056          0   (incl. Generated)
        690          8         16        971          9          0   (incl. Padding)
 
@@ -7642,8 +7642,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     33234        308     149694       1408     146176    1298367   Grand Totals
-     33234        308     149694       1408     146176    1298367   ELF Image Totals
+     33234        308     149694       1408     146176    1299255   Grand Totals
+     33234        308     149694       1408     146176    1299255   ELF Image Totals
      33234        308     149694       1408          0          0   ROM Totals
 
 ==============================================================================

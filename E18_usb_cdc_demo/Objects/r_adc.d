@@ -1,5 +1,5 @@
 ./objects/r_adc.o: \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_adc\r_adc.c \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_adc\r_adc.c \
   ra\fsp\inc\api\bsp_api.h ra\fsp\inc\api\fsp_common_api.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\assert.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \

@@ -1,5 +1,5 @@
 ./objects/r_ceu.o: \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_ceu\r_ceu.c \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_ceu\r_ceu.c \
   ra\fsp\inc\instances\r_ceu.h ra\fsp\inc\api\bsp_api.h \
   ra\fsp\inc\api\fsp_common_api.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\assert.h \

@@ -1,6 +1,6 @@
 ./objects/bsp_clocks.o: \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\bsp\mcu\all\bsp_clocks.c \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\bsp\mcu\all\bsp_clocks.h \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\bsp\mcu\all\bsp_clocks.c \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\bsp\mcu\all\bsp_clocks.h \
   ra_gen\bsp_clock_cfg.h ra\fsp\inc\api\bsp_api.h \
   ra\fsp\inc\api\fsp_common_api.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\assert.h \
@@ -35,7 +35,7 @@
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\string.h \
   ra\fsp\inc\api\..\..\inc\api\fsp_common_api.h \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\bsp\mcu\all\bsp_compiler_support.h \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\bsp\mcu\all\bsp_compiler_support.h \
   ra\fsp\inc\api\..\..\src\bsp\mcu\all\bsp_tfu.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\math.h \
   ra\fsp\inc\api\..\..\src\bsp\mcu\all\bsp_sdram.h \

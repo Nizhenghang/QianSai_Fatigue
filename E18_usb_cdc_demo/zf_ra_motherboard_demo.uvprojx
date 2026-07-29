@@ -403,6 +403,11 @@
               <FilePath>.\code\fatigue_detect.c</FilePath>
             </File>
             <File>
+              <FileName>audio_player.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\code\audio_player.c</FilePath>
+            </File>
+            <File>
               <FileName>r_usb_pcdc_descriptor.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\code\r_usb_pcdc_descriptor.c</FilePath>
@@ -431,11 +436,6 @@
               <FileName>voice_assistant.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\code\voice_assistant.c</FilePath>
-            </File>
-            <File>
-              <FileName>audio_player.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\code\audio_player.c</FilePath>
             </File>
             <File>
               <FileName>image_export.c</FileName>

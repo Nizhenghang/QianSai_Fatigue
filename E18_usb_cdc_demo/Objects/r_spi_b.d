@@ -1,5 +1,5 @@
 ./objects/r_spi_b.o: \
-  D:\Nizhenghang\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_spi_b\r_spi_b.c \
+  D:\Nizhenghang\Project\QianSai\E18_usb_cdc_demo\ra\fsp\src\r_spi_b\r_spi_b.c \
   ra\fsp\inc\instances\r_spi_b.h ra\fsp\inc\api\r_spi_api.h \
   ra\fsp\inc\api\bsp_api.h ra\fsp\inc\api\fsp_common_api.h \
   D:\Download\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\assert.h \
